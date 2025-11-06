@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-Roman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Crimson";
+  src: url("/fonts/Crimson-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+html {
+  background-color: #00796B;
+  color: #ffff;
+  background-image: url('images/Tile.gif');
+  background-repeat: repeat;
+  background-size: 500px 500px;
+  background-position: top left;
+  animation: moveBackground 60s linear infinite;
+  font-family: "Crimson", serif;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 1000px;
+  }
+}
+
+h1 {
+  font-size: 75px;
+  font-family: "Crimson", serif;
+}
+
+h2 {
+  color: #FF5252;
+  font-size: 50px;
+  font-family: "Crimson", serif;
+}
+
+p,
+i {
+  font-size: 25px;
+  font-family: "Crimson", serif;
+}
+
+ul {
+  color: #FF5252;
+  font-size: 25px;
+  font-family: "Crimson", serif;
+}
+
+.nav {
+  font-size: 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-family: "Crimson", serif;
+}
+
+.nav-disabled {
+  color: gray;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default;
+}
+
+footer {
+  font-size: 25px;
+  font-family: "Crimson", serif;
+}
+
+a {
+  color: #FF5252;
+  text-decoration: none;
+  font-family: "Crimson", serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF5252;
+}
+
+html {
+  scrollbar-width: auto;
+  scrollbar-color: #FF5252 rgba(0, 0, 0, 0.5);
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  font-family: "Crimson", serif;
+}
+
+.intro {
+  width: 800px;
+  margin: 2.5rem auto 5rem auto;
+}
+
+.member-card {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.member-header h2 {
+  margin: 0;
+}
+
+.member-header i {
+  color: #FF5252;
+}
+
+.member-header img {
+  width: 125px;
+  height: auto;
+  border-radius: 9.375px;
+  border: 5px groove;
+}
+
+.member-card p {
+  margin-bottom: 5rem;
+}
+
+.note {
+  width: 700px;
+  margin: 5rem auto 2.5rem auto;
+  color: #ffffff;
+  font-style: italic;
+  font-family: "Crimson", serif;
+}
+
+.footer-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.footer-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  margin-bottom: -1.25%;
+}
+
+.footer-left p {
+  color: #FF5252;
+  font-size: 18.75px;
+  font-weight: bold;
+  font-family: "Crimson", serif;
+}
+
+body main h1 {
+  margin: 0;
+  text-align: center;
+}
+
+body main nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+body main .track-card {
+    width: 800px;
+    margin: 2.5rem auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+body main .track-card .track-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main .track-card .track-header h2 {
+  margin: 0;
+  font-size: 25px;
+  padding: 5%;
+}
+
+body main .track-card .track-header img {
+  height: 150px;
+  width: auto;
+}
+
+body main .track-card audio {
+  display: block;
+  margin-left: 0;
+  margin-top: -5rem;
+  padding: 5%;
+}
+
+body main .track-card .track-links {
+  display: flex;
+}
+
+body main .track-card .track-links a {
+  margin: 0;
+  padding: 2.5%;
+}
+
+body main .track-card .track-links a:nth-child(2n) {
+  margin: 0 -3.75%;
+}
+
+#signup-form,
+#login-form {
+  margin: 5rem;
+}
+
+.pass-header {
+  margin: 2.5rem;
+  color: #FF5252;
+  font-family: "Crimson", serif;
+}
+
+label {
+  font-size: 25px;
+  font-style: oblique;
+  font-family: "Crimson", serif;
+}
+
+input {
+  background-color: #ffffff;
+  border: ridge #409B90;
+  color: #000000;
+  font-family: "Crimson", serif;
+}
+
+button {
+  margin-top: 2.5rem;
+  background-color: #FF5252;
+  font-family: "Crimson", serif;
+  font-size: 25px;
+  color: white;
+  border-style: ridge 1.25rem;
+  border-color: #409B90;
+  padding: 12.5px;
+  border-radius: 2.5px;
+}
+
+.white {
+  color: white !important;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  margin: 5rem auto;
+}
+
+.form-section {
+  padding: 2rem;
+}
+
+#file-buttons button {
+  margin-top: 0.5rem;
+  background-color: #FF5252;
+  font-family: "Crimson", serif;
+  font-size: 25px;
+  color: white;
+  border-style: ridge 1.25rem;
+  border-color: #409B90;
+  padding: 12.5px;
+  border-radius: 2.5px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3,
+  p,
+  i,
+  ul {
+    font-size: 18px;
+  }
+
+  .intro,
+  .member-card,
+  .track-card,
+  #signup-form,
+  #login-form {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #file-buttons button,
+  button {
+    font-size: 18px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .track-card .track-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3,
+  p,
+  i,
+  ul {
+    font-size: 14px;
+  }
+
+  .track-card .track-header img {
+    height: 100px;
+  }
+
+  #file-buttons button,
+  button {
+    font-size: 16px;
+    padding: 8px;
+  }
+}

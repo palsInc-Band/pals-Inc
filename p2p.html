@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pal2pal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/hug.ico" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+    <h1>Heya pal, I wanna share some files with you...</h1>
+    <h2>This page is being hosted temporarily, let me know when the download is finished so I can kill the server.</h2>
+    <h3>Below are buttons which will download zip files. Don't worry, my dear friends... you are not infected, for now.</h3>
+    <div id="file-buttons"></div>
+  </main>
+  <script>
+    async function loadFiles() {
+      const res = await fetch("p2pRetrieve/");
+      const text = await res.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, "text/html");
+      const links = [...doc.querySelectorAll("a")].filter(a => a.href.endsWith(".zip"));
+      const container = document.getElementById("file-buttons");
+      links.forEach(link => {
+        const fileName = link.textContent;
+        const btn = document.createElement("button");
+        btn.textContent = fileName;
+        btn.onclick = () => window.location.href = "p2pRetrieve/" + fileName;
+        container.appendChild(btn);
+        container.appendChild(document.createElement("br"));
+      });
+    }
+    loadFiles();
+  </script>
+</body>
+</html>

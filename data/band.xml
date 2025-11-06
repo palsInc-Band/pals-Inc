@@ -1,0 +1,37 @@
+<band>
+  <member>
+    <id>vee</id>
+    <name>Veido</name>
+    <age>21</age>
+    <pronouns>she/her</pronouns>
+    <avatar type="png">Veido.png</avatar>
+    <info>Transgender woman from México, mainly a composer who's also in charge of mix and master.</info>
+  </member>
+  <member>
+    <id>lucia</id>
+    <name>Lucif Crøs</name>
+    <age>19</age>
+    <pronouns>Any &amp; All</pronouns>
+    <avatar type="png">Lucif.png</avatar>
+    <info>Pxngender Anarcho-Punk in charge of composition and publishing. They manage all platforms and develop the
+      website.</info>
+  </member>
+  <member>
+    <id>cheese</id>
+    <name>CheesyBow</name>
+    <age>18</age>
+    <pronouns>Any &amp; All</pronouns>
+    <avatar type="gif">Cheese.gif</avatar>
+    <info>Pangender anarchist. Non-conforming AND experimental with a touch of queer energy. Provides instrumental recordings when desired;
+      plays instruments such as clarinet, electric guitar, tba. Vocalist. Manages emails and socials, and will chat with
+      you too :3</info>
+  </member>
+  <member>
+    <id>ghostie</id>
+    <name>LilGhost</name>
+    <age>18</age>
+    <pronouns>He/Him</pronouns>
+    <avatar type="png">Ghostie.png</avatar>
+    <info><![CDATA[Name's Ghostie, I wanna do voice-overs and play some instruments. I like singing and coming up with song ideas. I love all my friends <3 :)]]></info>
+  </member>
+</band>
